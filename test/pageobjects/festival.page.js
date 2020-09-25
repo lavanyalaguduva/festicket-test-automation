@@ -16,7 +16,7 @@ class FestivalPage extends Page {
     browser.waitUntil(
       () => browser.getUrl().includes("shop")
     );
-    expect(browser).toHaveUrlContaining("shop/");
+    expect(browser).toHaveUrlContaining(urlConfig.ESTEREO_PICNIC_SHOP_URL);
   }
 }
 export default new FestivalPage();

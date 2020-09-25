@@ -1,6 +1,6 @@
 import Page from "./page";
 import config from "../config/wdio.shared.conf";
-import urlConfig from "../data/appUrls.data"
+import urlConfig from "../data/appUrls.data";
 
 class HomePage extends Page {
   get searchBar() {
@@ -17,6 +17,7 @@ class HomePage extends Page {
     this.searchBar.click();
     this.searchBar.keys(festivalNameTag);
   }
+  
   checkSearchBarListsOnlyRelatedFestivals(festivalNameTag) {
     browser.waitUntil(() => this.searchResultsList[0].isExisting());
     var results = this.searchResultsList;
@@ -26,6 +27,7 @@ class HomePage extends Page {
       });
     });
   }
+
   selectTheFestivalToBook(festivalName) {
     browser.waitUntil(() => this.searchResultsList[0].isExisting());
     var results = this.searchResultsList;

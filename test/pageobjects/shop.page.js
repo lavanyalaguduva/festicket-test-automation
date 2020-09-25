@@ -37,23 +37,19 @@ class ShopPage extends Page {
       this.addItemButton.click();
     }
     const oneTicketCost = this.ticketCost.getText();
-    const totalTicketCost = parseFloat(oneTicketCost.substr(1)) * 3;
-    expect(this.basketButton).toHaveTextContaining("£" + totalTicketCost);
+    const totalTicketCost = "£" + (parseFloat(oneTicketCost.substr(1)) * numberOfTickets);
+    expect(this.basketButton).toHaveTextContaining(totalTicketCost);
   }
 
   checkTicketsAreAddedToTheBasket(numberOfTickets) {
     const oneTicketCost = this.ticketCost.getText();
-    const totalTicketCost = "£" + parseFloat(oneTicketCost.substr(1)) * numberOfTickets;
+    const totalTicketCost = "£" + (parseFloat(oneTicketCost.substr(1)) * numberOfTickets);
     expect(this.basketButton).toHaveTextContaining(totalTicketCost);
 
     this.basketButton.click();
-    expect(this.ticketQuantityInBasket).toHaveTextContaining(
-      numberOfTickets.toString()
-    );
-    expect(this.ticketTotalCostInBasket[1]).toHaveTextContaining(
-      totalTicketCost
-    );
-    expect(this.checkOutButton).toBeClickable();
+    browser.waitUntil(() => this.checkOutButton.isClickable());
+    expect(this.ticketQuantityInBasket).toHaveTextContaining(numberOfTickets.toString());
+    expect(this.ticketTotalCostInBasket[1]).toHaveTextContaining(totalTicketCost);
   }
 }
 export default new ShopPage();

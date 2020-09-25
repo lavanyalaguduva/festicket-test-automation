@@ -82,11 +82,11 @@ Learn more: SameSite cookies explained
 ```
 This seems to be some kind os security related issue. Needs investigation.
 
-2)Once the tickets are booked, the total cost doesn't seem to match the ticket cost. This doesn't happen to all the festivals. Observed only with "Festival Estéreo Picnic 2020'.
+2)Once the tickets are booked, the total cost doesn't seem to match the ticket cost. This doesn't happen to all the festivals. Observed only with "paradigm Festival - Melbourne 2020'.
 
 Steps to reproduce:
-- Search for 'Festival Estéreo Picnic 2020' in the search bar in homepage.
-- Select the 'Festival Estéreo Picnic 2020' from the search list
+- Search for 'Paradigm Festival - Melbourne 2020' in the search bar in homepage.
+- Select the 'Paradigm Festival - Melbourne 2020' from the search list
 - Once the festival page is displayed, click the 'Book Now' button in the page.
 - Once you are navigated to the page to buy tickets, increse the ticket quantity to 1.
 
@@ -99,14 +99,14 @@ The total cost of the ticket dispalyed in the basket button is not same as the t
 Screenshot:
 The screenshot related to the above issue is present under "issues/Screenshot 2020-09-25 at 00.12.59.png"
 
-3)Book Now button from the 'Festival Estéreo Picnic 2020' festival page is not taking to the shop page
+3)Book Now button from the 'Paradigm Festival - Melbourne 2020' festival page is not taking to the shop page
 
 Steps to reproduce:
-- Go to https://www.festicket.com/festivals/festival-estereo-picnic/
+- Go to https://www.festicket.com/festivals/paradigm-festival-melbourne/2020/
 - Select the 'Book Now' button
 
 Expected Results:
-On clicking 'Book Now' button, you should be navigated to https://www.festicket.com/festivals/festival-estereo-picnic/shop/ url
+On clicking 'Book Now' button, you should be navigated to https://www.festicket.com/festivals/paradigm-festival-melbourne/2020/shop/ url
 
 Actual Results:
 No action happens on clicking 'Book Now' from the above festival page. No error in the console or in the network tab.

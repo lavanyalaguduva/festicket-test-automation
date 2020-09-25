@@ -7,7 +7,7 @@ class FestivalPage extends Page {
   }
 
   open() {
-    super.open(urlConfig.PARADIGM_FESTIVAL_URL);
+    super.open(urlConfig.ESTEREO_FESTIVAL_URL);
   }
 
   checkFestivalCanBeBooked() {

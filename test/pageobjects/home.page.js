@@ -1,5 +1,6 @@
 import Page from "./page";
 import config from "../config/wdio.shared.conf";
+import urlConfig from "../data/appUrls.data"
 
 class HomePage extends Page {
   get searchBar() {
@@ -38,7 +39,7 @@ class HomePage extends Page {
 
   checkTheSelectedFestivalPageIsdisplayed() {
     browser.waitUntil(() => browser.getUrl() != config.baseUrl);
-    expect(browser).toHaveUrlContaining("paradigm-festival-melbourne");
+    expect(browser).toHaveUrlContaining(urlConfig.ESTEREO_FESTIVAL_URL);
   }
 }
 export default new HomePage();

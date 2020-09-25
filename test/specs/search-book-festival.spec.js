@@ -7,8 +7,8 @@ import bookTicketsData from "../data/bookTickets.data"
 
 describe("Performing a search operation on Festicket home page using the search bar", function () {
 
-  let festivalNameTag = searchData.PARADIGM_FESTIVAL_NAME_TAG_TO_SEARCH;
-  let festivalName = searchData.PARADIGM_FESTIVAL_NAME;
+  let festivalNameTag = searchData.ESTEREO_FESTIVAL_NAME_TAG_TO_SEARCH;
+  let festivalName = searchData.ESTEREO_FESTIVAL_NAME;
   let numberOfTickets = bookTicketsData.NUMBER_OF_TICKETS;
   
   it("Search for a festival", function () {

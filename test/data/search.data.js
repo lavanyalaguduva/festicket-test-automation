@@ -1,2 +1,2 @@
-module.exports.PARADIGM_FESTIVAL_NAME_TAG_TO_SEARCH = "Paradigm Festival"
-module.exports.PARADIGM_FESTIVAL_NAME = "Paradigm Festival – Melbourne 2020"
+module.exports.ESTEREO_FESTIVAL_NAME_TAG_TO_SEARCH = "Estéreo Picnic"
+module.exports.ESTEREO_FESTIVAL_NAME = "Festival Estéreo Picnic 2020"

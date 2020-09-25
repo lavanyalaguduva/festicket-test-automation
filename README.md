@@ -12,7 +12,7 @@ The above scenario has been automated using webdriverio v6 with mocha.
 ### Code Structure
 
 #### Dependencies
-The major dependencies required for this test framework are wdio packages and babel packages. Babel is a JavaScript compiler and  is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.
+The major dependencies required for this test framework are wdio packages and babel packages. Babel is a JavaScript compiler and  is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.
 
 All the required dependencies are under package.json. They can be installed using npm.
 
@@ -21,7 +21,7 @@ The code related to test automation are present under *test* folder in the root.
 
 This main folder includes the following sub-folders
 
-*config* - to add wdio config files. This folder now includes a config file to run the tests locally. There is a shared config file which contains the wdio properties common to all the other configs.  This folder can be extended to include config files if the tests need to be run in other platforms like remote grid, browserstack, saucelabs etc.,
+*config* - to add wdio config files. This folder now includes a config file to run the tests locally. There is a shared config file which contains the wdio properties common to all the other configs.  This folder can be extended to include config files if the tests need to be run in other platforms like remote grid, browserstack, saucelabs etc.,
 
 *data* - contains all the required test data in one place. This helps data to be shared between multiple specs and also can be maintained easily.
 
@@ -80,21 +80,21 @@ AFFECTED RESOURCES
 3 requests
 Learn more: SameSite cookies explained
 ```
-This seems to be some kind os security related issue. Needs investigation.
+This seems to be some kind of security related issue. Needs investigation.
 
 2)Once the tickets are booked, the total cost doesn't seem to match the ticket cost. This doesn't happen to all the festivals. Observed only with "paradigm Festival - Melbourne 2020'.
 
 Steps to reproduce:
-- Search for 'Paradigm Festival - Melbourne 2020' in the search bar in homepage.
+- Search for 'Paradigm Festival - Melbourne 2020' in the search bar on the homepage.
 - Select the 'Paradigm Festival - Melbourne 2020' from the search list
-- Once the festival page is displayed, click the 'Book Now' button in the page.
-- Once you are navigated to the page to buy tickets, increse the ticket quantity to 1.
+- Once the festival page is displayed, click the 'Book Now' button on the page.
+- Once you are navigated to the page to buy tickets, increase the ticket quantity to 1.
 
 Expected Results:
-The total cost of the ticket dispalyed in the basket button is expected to be same as the ticket cost when 1 ticket is bought.
+The total cost of the ticket displayed in the basket button is expected to be the same as the ticket cost when 1 ticket is bought.
 
 Actual Results:
-The total cost of the ticket dispalyed in the basket button is not same as the ticket cost when 1 ticket is bought.
+The total cost of the ticket displayed in the basket button is not the same as the ticket cost when 1 ticket is bought.
 
 Screenshot:
 The screenshot related to the above issue is present under "issues/Screenshot 2020-09-25 at 00.12.59.png"
@@ -111,4 +111,4 @@ On clicking 'Book Now' button, you should be navigated to https://www.festicket.
 Actual Results:
 No action happens on clicking 'Book Now' from the above festival page. No error in the console or in the network tab.
 
-4)Observed the site to be very slow while loading yesterday night. Couldn't collect any logs from network/console tab. But looks like it gets slower when it tries to fetch data from cache. Needs investigation.
+4)Observed the site to be very slow while loading yesterday night. Couldn't collect any logs from the network/console tab. But it looks like it gets slower when it tries to fetch data from cache. Needs investigation.
